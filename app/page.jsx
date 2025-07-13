@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const sites = [
+const mainSites = [
   {
     name: "楽天",
     logo: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Rakuten_Global_Brand_Logo.svg",
@@ -22,7 +22,15 @@ const sites = [
     name: "ジモティー",
     logo: "https://jmty.jp/favicon.ico",
     baseUrl: "https://jmty.jp/all/sale?keyword=",
-  },
+    }
+  {
+    name: "Amazon",
+    logo: "https://www.amazon.co.jp/favicon.ico",
+    baseUrl: "https://www.amazon.co.jp/s?k=",
+  }
+  ];
+
+  const manualSites = [
   {
     name: "モノタロウ",
     logo: "https://www.monotaro.com/favicon.ico",
@@ -33,11 +41,6 @@ const sites = [
     logo: "https://www.carsensor.net/favicon.ico",
     baseUrl: "https://www.carsensor.net/usedcar/search.php?KEYWORD=",
   },
-  {
-    name: "Amazon",
-    logo: "https://www.amazon.co.jp/favicon.ico",
-    baseUrl: "https://www.amazon.co.jp/s?k=",
-  }
 ];
 
 export default function Alpha() {
